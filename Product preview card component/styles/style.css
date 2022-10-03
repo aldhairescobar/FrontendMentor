@@ -5,40 +5,98 @@
   font-family: 'Montserrat', sans-serif;
 */
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: rgba(242, 234, 226, 1);
   font-family: 'Montserrat', sans-serif;
 }
 
-
 /* Typography */
 
+h1,
+p {
+  margin: 0;
+}
+
 .card-overline {
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.75rem;
   color: rgba(108, 114, 137, 1);
   letter-spacing: 5px;
+  margin-bottom: 0.75rem;
 }
 
 .card-title {
   font-family: 'Fraunces', serif;
   font-size: 2rem;
   color: rgba(28, 35, 43, 1);
+  margin-bottom: 1rem;
 }
 
 .card-description {
   font-weight: 500;
   font-size: 0.875rem;
   color: rgba(108, 114, 137, 1);
+  margin-bottom: 1.5rem;
+}
+
+/* buttons */
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  background-color: #3D8168;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.93rem;
+  cursor: pointer;
 }
 
 /* Layout */
+
+.card-container {
+  width: 92%;
+  margin: 1.75rem auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
 
 .card-image {
   background-image: url(../images/image-product-mobile.jpg);
   background-size: cover;
   height: 240px;
+}
+
+.card-container-info {
+  padding: 1.5rem;
+}
+
+
+/* attribution */
+
+.attribution {
+  margin: 4rem 0 1rem;
+  font-size: .75rem;
+  color: rgba(0, 0, 0, .7);
+  text-align: center;
+}
+
+.attribution a {
+  color: rgba(0, 0, 0, .9);
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  text-decoration: underline;
 }
