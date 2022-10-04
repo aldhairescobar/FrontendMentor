@@ -47,10 +47,26 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.card-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: #3D8168;
+}
+
+.card-price-info span:last-child{
+  color: #6C7289;
+  font-weight: 500;
+  font-size: 0.81rem;
+  text-decoration: line-through;
+}
+
 /* buttons */
 
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
   width: 100%;
   background-color: #3D8168;
   font-weight: 700;
@@ -59,6 +75,16 @@ p {
   border-radius: 8px;
   padding: 0.93rem;
   cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1A4032;
+}
+
+.cart-icon-btn {
+  margin-right: 0.70rem;
 }
 
 /* Layout */
@@ -79,6 +105,15 @@ p {
 
 .card-container-info {
   padding: 1.5rem;
+}
+
+
+.card-price-info {
+  max-width: 194px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 
