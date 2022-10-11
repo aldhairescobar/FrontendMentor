@@ -16,6 +16,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Typography */
 
 h1,
@@ -100,16 +104,9 @@ p {
   background-color: #ffffff;
 }
 
-.card-image {
-  background-image: url(../images/image-product-mobile.jpg);
-  background-size: cover;
-  min-height: 240px;
-}
-
 .card-container-info {
   padding: 1.5rem;
 }
-
 
 .card-price-info {
   max-width: 194px;
@@ -124,12 +121,12 @@ p {
   .card-container {
     display: flex;
     max-width: 600px;
+    margin-top: 6rem;
   }
 
-  .card-image {
-    min-width: 150px;
-    background-image: url(../images/image-product-desktop.jpg);
-    background-position: center;
+  .card-image{
+    object-fit: cover;
+    height: 100%;
   }
 
   .card-container-info {
@@ -138,7 +135,11 @@ p {
 }
 
 @media (min-width: 550px) {
-  .card-image {
+  .card-container {
+    margin-top: 10.9375rem;
+  }
+
+  .card-image-container {
     width: 50%;
   }
 
@@ -146,9 +147,6 @@ p {
     width: 50%;
   }
 }
-
-
-
 
 /* attribution */
 
