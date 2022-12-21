@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(139, 172, 217, 1);
+  background-color: rgba(13, 25, 44, 1);
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.equilibrium-img {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Typography */
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.733rem;
+  margin-bottom: 12px;
+}
+
+.card-description{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+
+.card-container {
+  width: 88%;
+  margin: 3.875rem auto 0;
+  background-color: rgba(21, 38, 63, 1);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
